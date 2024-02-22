@@ -939,7 +939,8 @@ can be accomplished with ``addAttribute`` or ``removeAttribute``:
     <!-- add the "disabled" attribute when loading -->
     <div data-loading="addAttribute(disabled)">...</div>
 
-    <!-- add an attribute and its value -->
+    <!-- this feature only works for empty attributes that don't define any value;
+         the following example won't work: -->
     <div data-loading="addAttribute(style='color: red')">...</div>
 
 You can also combine any number of directives by separating them with a
